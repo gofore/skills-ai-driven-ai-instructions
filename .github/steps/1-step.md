@@ -1,10 +1,10 @@
 ## Step 1: Understand AI Instruction Files
 
-Welcome to the "AI Constitution" lab! In this step, you'll learn about the importance of AI instruction files and how they work.
+Welcome to the "AI Instructions" lab! In this step, you'll learn about the importance of AI instruction files and how they work.
 
-### 📖 Theory: The "Constitution" of Code
+### 📖 Theory: The "Instructions" of Code
 
-An AI instruction file acts as the persistent memory or "Constitution" for AI agents (like Claude Code, Cursor, or Copilot). Instead of repeating your tech stack, architectural preferences, and testing commands in every chat session, you define them once in a system-level file.
+An AI instruction file acts as the persistent memory or "Instructions" for AI agents (like Claude Code, Cursor, or Copilot). Instead of repeating your tech stack, architectural preferences, and testing commands in every chat session, you define them once in a system-level file.
 
 ### Why use Instruction Files?
 1. **Consistency:** Ensure the AI always uses the same naming conventions (e.g., PascalCase for components).
