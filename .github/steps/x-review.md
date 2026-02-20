@@ -1,16 +1,17 @@
 ## Review
 
-_Congratulations, you've completed this exercise and learned a lot about (replace-me: feature/product that was taught in this exercise)
+Congratulations! You've successfully established a solid foundation for your AI coding assistant.
 
 <img src="https://octodex.github.com/images/jetpacktocat.png" alt="celebrate" width=200 align=right>
 
 Here's a recap of your accomplishments:
 
-- (replace-me: Accomplishment #1)
-- (replace-me: Accomplishment #N)
+- Created an `AGENTS.md` file to guide AI behavior.
+- Defined key sections including Role, Tech Stack, Code Style, Architectural Decisions, and Communication.
+- Configured the project to enforce these standards.
 
 ### What's next?
 
-- (replace-me: Natural follow up Skills exercise - if there is one)
-- (replace-me: Documentation link to learn more about the feature)
-- (replace-me: Other resources or calls to action)
+- Start using your AI assistant with these new instructions!
+- Iterate on `AGENTS.md` as your project evolves and you discover new patterns.
+- Share your configuration with your team to ensure consistency.
