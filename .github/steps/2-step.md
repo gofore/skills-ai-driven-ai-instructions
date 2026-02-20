@@ -1,36 +1,28 @@
-## Step 2: (replace-me: STEP-NAME)
+## Step 2: Supporting Multiple LLMs
 
-(replace-me: OPTIONAL Brief story or scenario to introduce the step)
+You've created a great "source of truth" `AGENTS.md` file. But what happens when you use different AI tools, each with its own instruction file format? In this step, you'll learn how to support multiple LLMs without duplicating your instructions.
 
-### 📖 Theory: (replace-me: Theory title)
+### 📖 Theory: A Single Source of Truth
 
-<!-- GitHub-styled notifications can be used outside of ordered lists. Available options are: NOTE, IMPORTANT, WARNING, TIP, CAUTION -->
-<!--
-> [!NOTE]
-> (Important note or additional information relevant to this section)
- -->
+Different developers on your team might use different AI assistants. Some might use GitHub Copilot, others might use Claude, and some might use Cursor. Each of these tools looks for a different instruction file.
 
-(replace-me: Optional theory or background information relevant to this step)
+Instead of copying and pasting your instructions into each file (which would be a maintenance nightmare), you can use your `AGENTS.md` file as a single source of truth and simply reference it from the other files.
 
-(replace-me: OPTIONAL Reference images from the `.github/images/` directory to support any part of the content)
+This has several advantages:
+*   **Maintainability:** When you need to update your instructions, you only need to edit one file.
+*   **Consistency:** All AI assistants will be working from the same set of instructions.
+*   **Flexibility:** Developers can use their preferred AI tool without sacrificing consistency.
 
-<img width="200" alt="descriptive alt text" src="../images/inflatocat.png" />
+### ⌨️ Activity: Create Your LLM-Specific Instruction Files
 
+Your task is to create instruction files for GitHub Copilot and Claude, and have them reference your `AGENTS.md` file.
 
-### ⌨️ Activity: (replace-me: Activity title)
+1.  Create a new file named `CLAUDE.md` in the root of this repository.
+2.  Create a new file named `copilot-instructions.md` in the `.github` directory.
+3.  Use your favorite AI assistant to generate the content for these files. Use the following prompt:
 
-1. (replace-me: First instruction)
+    > "Generate the content for `CLAUDE.md` and `.github/copilot-instructions.md`. These files should be very brief and simply reference the `AGENTS.md` file as the primary source of truth for project guidelines. Add a note that tool-specific instructions can be added to these files if needed."
 
-    (replace-me: Make sure to properly indent any multiline instructions)
+4.  Commit and push the new files to your repository.
 
-1. (replace-me: Second instruction)
-
-1. (replace-me: Additional instructions as needed)
-
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-- (replace-me: Troubleshooting tip or hint)
-- (replace-me: Additional troubleshooting tips as needed)
-
-</details>
+Once you've pushed the files, a GitHub Actions workflow will automatically check your work.
